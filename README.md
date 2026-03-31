@@ -28,10 +28,34 @@ The project consists of 3 main parts:
 ![ProjectStructure](./Images/ProjectStructure.png)
 
 ---
-###⚙️ Requirements
-####🖥️ Software
+### ⚙️ Requirements
+#### 🖥️ Software
 Install the following:
 - Ubuntu 22.04
 - ROS 2 Humble
 - NVIDIA Isaac Sim
 - Python 3.10
+---
+### 🚀 Launching Isaac Sim
+After successfully installing all the required software, the next step is to launch NVIDIA Isaac Sim with the ROS 2 environment properly configured.
+
+#### 📌 Step 1: Source ROS 2 Environment
+Before opening Isaac Sim, you must source the ROS 2 setup file. This ensures that all ROS 2 commands and packages are available in your terminal session.
+
+`source /opt/ros/humble/setup.bash`
+
+*⚠️ Important:*
+This step must be performed every time you open a new terminal before working with ROS 2 or Isaac Sim.
+
+#### 📌 Step 2: Launch Isaac Sim
+Navigate to your Isaac Sim installation directory and run the startup script.
+
+`/home/tiger/isaac-sim/isaac-sim.sh`
+
+🔁 Replace /home/tiger/isaac-sim/ with the actual path where Isaac Sim is installed on your system.
+
+#### ✅ Expected Result
+- Isaac Sim application will launch
+- You will see the main interface with viewport, stage, and tool panels
+- The environment is now ready for simulation and ROS 2 integration
+
