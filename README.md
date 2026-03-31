@@ -58,4 +58,26 @@ Navigate to your Isaac Sim installation directory and run the startup script.
 - Isaac Sim application will launch
 - You will see the main interface with viewport, stage, and tool panels
 - The environment is now ready for simulation and ROS 2 integration
+---
+### 🏗️ Robot Setup Options
+
+#### Option 1: Use Pre-Built Model (Recommended)
+
+If you want to quickly run the project:
+- Open Isaac Sim
+- Load the provided file:
+- `mobile_car.usd` 
+![ProjectStructure](./Images/ProjectStructure.png)
+- Continue with ROS 2 integration steps
+
+✅ This is the fastest way to get started
+
+
+
+
+
+
+
+
+
 
