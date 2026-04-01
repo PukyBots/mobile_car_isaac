@@ -93,6 +93,27 @@ Check the detailed guide here:
 
 ---
 
+### 🎮 Controlling the Robot using ROS 2 (Keyboard)
 
+After building the robot, the next step is to connect it with ROS 2 and control it using the keyboard.  
+**🔗 Enable ROS 2 Bridge**  
+ros2_bridge_library img ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Open Isaac Sim
+- Go to: `Window → Extensions`
+- Search ROS 2
+- Enable: Omni.isaac.ros2_bridge
 
+#### 🧩 Setup Action Graph
+action graph image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Go to:
+  `Window → Visual Scripting → Action Graph`
+- Create a new graph  
+**Add nodes:**
+- On Playback Tick
+- ROS2 Subscribe Twist
+- Differential Controller
+- Articulation Controller
 
+👉 Connect them as shown in the image
+
+---
