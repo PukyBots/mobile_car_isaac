@@ -116,6 +116,32 @@ action graph image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 👉 Connect them as shown in the image
 
+
+#### ⚙️ Node Configuration (Important)
+
+Configure each node as follows:
+-  ROS2 Subscribe Twist
+   - Set Topic Name → /cmd_vel
+   - (Node ID can be left as default)
+👉 This receives movement commands from ROS 2  
+
+-  Differential Controller
+   - Set Wheel Distance → distance between left & right wheels (e.g., 0.15)
+   - Set Wheel Radius → radius of wheel (e.g., 0.033)  
+👉 These values control how accurately the robot moves and turns  
+
+-  Articulation Controller
+   - Enable Use Path ✅
+   - Set Robot Path → select your robot (e.g., /World/TCE_Bot)
+   - Set Joint Names:  
+ `["left_wheel_joint", "right_wheel_joint"]`  
+👉 Make sure names exactly match your wheel joints
+
+**⚠️ Note**  
+Wrong wheel values → incorrect turning  
+Wrong joint names → robot will not move
+
+
 #### ▶️ Run & Control
 - Click Play ▶️ in Isaac Sim
 - Open terminal:  
