@@ -116,4 +116,17 @@ action graph image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 👉 Connect them as shown in the image
 
+#### ▶️ Run & Control
+- Click Play ▶️ in Isaac Sim
+- Open terminal:  
+`source /opt/ros/humble/setup.bash`  
+`ros2 run teleop_twist_keyboard teleop_twist_keyboard`  
+- Use keys:  
+  - i → forward  
+  - j / l → turn  
+  - k → stop  
+*✅ Result*  
+Robot responds to keyboard input
+Moves forward, turns, and stops in simulation
+
 ---
