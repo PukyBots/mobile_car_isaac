@@ -157,3 +157,35 @@ Robot responds to keyboard input
 Moves forward, turns, and stops in simulation  
 
 ---
+
+## 🎮 Joystick Control (Optional)
+
+You can also control the robot using a joystick/game controller.
+No changes are required in the Action Graph if keyboard control is already working.
+
+### ⚙️ Setup Joystick Packages
+
+**Open a new terminal:**  
+`sudo apt update`  
+`sudo apt install ros-humble-joy ros-humble-teleop-twist-joy`  
+`source /opt/ros/humble/setup.bash`  
+`ros2 launch teleop_twist_joy teleop-launch.py`  
+🔍 Verify Joystick Input
+
+**Open another terminal:**  
+`source /opt/ros/humble/setup.bash`    
+`ros2 topic echo /joy`  
+Press buttons on your controller
+Watch the buttons: values change  
+
+**🎯 Find Deadman Switch**  
+- Press buttons one by one (R1, R2, A, B, etc.)
+- Identify which button changes a value from 0 → 1 on 9th index
+- That button acts as the Deadman Switch
+  
+**🚗 Control the Robot**  
+- Press and hold the Deadman Switch
+- Move the left joystick forward
+- The robot will start moving in Isaac Sim
+  
+---
