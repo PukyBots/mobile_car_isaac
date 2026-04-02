@@ -34,6 +34,7 @@ Install the following:
 - NVIDIA Isaac Sim
 - Python 3.10
 ---
+# 1. 🖥️ Simulation (Isaac Sim)
 ## 🚀 Launching Isaac Sim
 After successfully installing all the required software, the next step is to launch NVIDIA Isaac Sim with the ROS 2 environment properly configured.
 
@@ -92,6 +93,7 @@ Check the detailed guide here:
 👉 [Build_from_scratch](./build_from_scratch.md)
 
 ---
+# 2. 🔗 Middleware (ROS 2)
 
 ## 🎮 Controlling the Robot using ROS 2 (Keyboard)
 
@@ -189,3 +191,37 @@ Watch the buttons: values change
 - The robot will start moving in Isaac Sim
   
 ---
+# 3. ⚙️ Hardware (Real Robot)
+
+## 🍓 Raspberry Pi Setup (Ubuntu + ROS 2)  
+
+To run ROS 2 on the physical robot, Ubuntu OS must be installed on the Raspberry Pi.  
+
+### 💿 Flash Ubuntu using Raspberry Pi Imager  
+- Install and open Raspberry Pi Imager  
+- Click Choose OS → Select Ubuntu (recommended version)  
+- Click Choose Storage → Select your SD card  
+- Click Write and wait for completion
+  
+**⚙️ Initial Setup**  
+- Insert SD card into Raspberry Pi  
+- Power ON the Raspberry Pi  
+- Connect to the same Wi-Fi network
+  
+**🔗 Connect via SSH**  
+`ssh username@<your_ip_address> [Change username and ip address with your value]`  
+
+**Example:**  
+`ssh raspi@192.168.247.85`  
+
+**📦 Install ROS 2**  
+`sudo apt update`  
+`sudo apt install ros-humble-desktop`  
+`source /opt/ros/humble/setup.bash`  
+
+**✅ Result**  
+- Ubuntu successfully installed on Raspberry Pi  
+- ROS 2 environment ready  
+- Raspberry Pi accessible via SSH  
+
+
