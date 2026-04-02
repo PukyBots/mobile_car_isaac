@@ -199,7 +199,7 @@ To run ROS 2 on the physical robot, Ubuntu OS must be installed on the Raspberry
 
 ### 💿 Flash Ubuntu using Raspberry Pi Imager  
 - Install and open Raspberry Pi Imager  
-- Click Choose OS → Select Ubuntu (recommended version)  
+- Click Choose OS → Other general-purpose OS → Ubuntu → Ubuntu Desktop 22.04 LTS (64-bit) 
 - Click Choose Storage → Select your SD card  
 - Click Write and wait for completion
   
