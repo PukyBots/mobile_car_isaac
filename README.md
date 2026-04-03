@@ -221,7 +221,42 @@ To run ROS 2 on the physical robot, Ubuntu OS must be installed on the Raspberry
 
 **✅ Result**  
 - Ubuntu successfully installed on Raspberry Pi  
-- ROS 2 environment ready  
+- ROS 2 environment ready    
 - Raspberry Pi accessible via SSH  
+---
+### 🤖 Hardware Integration & Control  
+
+After setting up the Raspberry Pi and installing ROS 2, the next step is to connect and control the physical robot.  
+
+#### 🔌 Upload Code to Arduino Nano  
+- Open Arduino IDE  
+- Connect Arduino Nano via USB  
+- Upload the code from:  
+`a_nano.c++`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+- This code handles motor control  
+
+#### 🍓 Setup Raspberry Pi Control  
+- Place the file:  
+`motor_bridge.py`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+- This script acts as a bridge between ROS 2 and Arduino  
+
+#### ▶️ Run Hardware Control  
+- `sudo chmod a+rw /dev/ttyUSB0`  
+- `python3 motor_bridge.py`  
+- First command → gives permission to access USB port  
+- Second command → starts communication with Arduino  
+
+#### 🎮 Control Using Keyboard  
+- Run ROS 2 keyboard control (same as simulation)  
+- The robot will now respond to commands  
+
+#### 🔁 Simulation + Hardware Sync  
+- Both Isaac Sim (digital twin) and physical robot can now be controlled together  
+- Movement commands are shared through ROS 2  
+
+---
+#### Arduino code ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#### Motor_bridge.py ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---
 
 
