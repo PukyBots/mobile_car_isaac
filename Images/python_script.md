@@ -19,5 +19,9 @@ To achieve a more accurate and realistic model, the robot components are created
 - Full model can be assembled programmatically
 - Provides better control and scalability compared to manual modeling
 ---
+## ⚡ What to Do Next
+- Once loaded, proceed with:
+- ROS 2 connection
+- Control setup (keyboard / joystick)
 ### [⬅️ Previous](../index.md) | [Next ➡️](../index.md)
 
