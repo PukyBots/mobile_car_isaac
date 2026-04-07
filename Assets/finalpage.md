@@ -8,21 +8,28 @@
 - Right → Real Robot (Hardware)
 - Both respond to the same keyboard input
 
-#### 🎯 What This Project Achieves
+## 🎯 What This Project Achieves
 
-- Real-time Simulation ↔ Hardware synchronization
-- Control using ROS 2 (keyboard + joystick)
-- Accurate digital twin representation
-- Scalable for future robotics applications
+### Real-time Simulation ↔ Hardware synchronization
 
-#### 🧠 Key Learnings
+![Architecture](./Architecture.png)
+
+### Control using ROS 2 (keyboard + joystick)
+
+Img~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+### Accurate digital twin representation
+
+### Scalable for future robotics applications
+
+## 🧠 Key Learnings
 
 - ROS 2 communication (/cmd_vel)
 - Isaac Sim / Action Graph
 - Hardware-software integration
 - Real-world robot control
 
-#### ⚡ Possible Improvements
+## ⚡ Possible Improvements
 
 - Add autonomous navigation (SLAM)
 - Improve motion accuracy (PID tuning)
@@ -33,13 +40,9 @@
 
 _This project demonstrates how a digital twin system can bridge simulation and real-world robotics using ROS 2 and Isaac Sim._
 
-### 🙌 Credits / Acknowledgment
+## 🙌 Credits / Acknowledgment
 
-- NVIDIA Isaac Sim
-- ROS 2 Community
-- **Mentor:** Pulkit Garg
-- **Team:** Afsal Aop, Swaveel
-- **Organization:** TCE
+![Architecture](./final_collage.png)
 
 ## ⭐ Support
 

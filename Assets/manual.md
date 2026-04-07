@@ -111,8 +111,9 @@ img~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## ⚡ What to Do Next
 
-- Once loaded, proceed with:
-- ROS 2 connection
-- Control setup (keyboard / joystick)
+- Enable ROS 2 Bridge in Isaac Sim
+- Setup Action Graph with required nodes
+- Configure /cmd_vel, wheel values & joints
+- Run teleop and control using keyboard 🚗
 
 ### [⬅️ Previous](../index.md) | [Next ➡️](./ros2_keyboard.md)

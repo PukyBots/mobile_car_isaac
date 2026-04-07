@@ -4,12 +4,21 @@ If you want to run the project quickly without building from scratch, you can di
 
 ### ▶️ Steps to Load the Model
 
-- Open Isaac Sim
-- Click:
-  `File → Open`
-- Select the model file:  
-  [Download USD Model](../mobile_car.usd)
-- Open the file in the scene
+### 1.Download the USD model: [Download USD Model](../mobile_car.usd)
+
+### 2.Open Isaac Sim.
+
+### 3.Click: `File → Open`
+
+![alt text](./file_open.png)
+
+### 4.Select the model file:
+
+![alt text](./file_selecting.png)
+
+### 5.Open the file in the scene.
+
+![alt text](./file_opened.png)
 
 ### ✅ Outcome
 
@@ -19,10 +28,11 @@ If you want to run the project quickly without building from scratch, you can di
 
 ---
 
-# ⚡ What to Do Next
+## ⚡ What to Do Next
 
-- Once loaded, proceed with:
-- ROS 2 connection
-- Control setup (keyboard / joystick)
+- Enable ROS 2 Bridge in Isaac Sim
+- Setup Action Graph with required nodes
+- Configure /cmd_vel, wheel values & joints
+- Run teleop and control using keyboard 🚗
 
 ### [⬅️ Previous](../index.md) | [Next ➡️](./ros2_keyboard.md)

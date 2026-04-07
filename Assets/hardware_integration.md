@@ -28,16 +28,16 @@ _This code is responsible for controlling the motors_
 
 - Place the following file in your Raspberry Pi:
   [motor_bridge.py](../motor_bridge.py)
-
 - This script acts as a bridge between ROS 2 and Arduino
 
-### ▶️ Run Hardware Control
+```bash
+nano motor_bridge.py #paste the motor_bridge.py here
 
-    sudo chmod a+rw /dev/ttyUSB0
-    python3 motor_bridge.py
+sudo chmod a+rw /dev/ttyUSB0 #grants permission to access USB
 
-- First command → grants permission to access USB
-- Second command → starts communication with Arduino
+python3 motor_bridge.py #starts communication with Arduino
+
+```
 
 ### 🎮 Control Using Keyboard
 
@@ -45,6 +45,8 @@ _This code is responsible for controlling the motors_
 - The physical robot will start responding to commands
 
 ### 🔁 Simulation + Hardware Sync
+
+Img~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` gif
 
 - Both Isaac Sim (digital twin) and real robot work together
 - Commands are shared using ROS 2
@@ -59,8 +61,9 @@ _This code is responsible for controlling the motors_
 
 ## ⚡ What to Do Next
 
-- Once loaded, proceed with:
-- ROS 2 connection
-- Control setup (keyboard / joystick)
+- Read encoder values from physical robot
+- Send data to ROS 2 for processing
+- Update Action Graph to use encoder feedback
+- Sync digital twin movement with real robot 🔁
 
-### [⬅️ Previous](./rpi_setup.md) | [Next ➡️](./finalpage.md)
+### [⬅️ Previous](./rpi_setup.md) | [Next ➡️](./encoder_motor.md)

@@ -34,14 +34,23 @@ To run ROS 2 on the physical robot, you need to install Ubuntu OS on the Raspber
 
 ### ⚙️ Initial Setup
 
-- Insert the SD card into the Raspberry Pi
-- Power ON the device
-- Complete basic Ubuntu setup
-- Connect to the same Wi-Fi network as your PC
+### 1.Insert the SD card into the Raspberry Pi
+
+![alt text](insert_memory.png)
+
+### 2.Power ON the device
+
+![alt text](rpi_interface.DNG)
+
+### 3.Complete basic Ubuntu setup
+
+### 4.Connect to the same Wi-Fi network as your PC
 
 ### 🔗 Connect via SSH
 
+```bash
     ssh username@<your_ip_address>
+```
 
 - Replace with your actual username and IP address
 
@@ -50,9 +59,11 @@ To run ROS 2 on the physical robot, you need to install Ubuntu OS on the Raspber
 
 ### 📦 Install ROS 2
 
+```bash
     sudo apt update
     sudo apt install ros-humble-desktop
     source /opt/ros/humble/setup.bash
+```
 
 ### ✅ Outcome
 
@@ -64,8 +75,9 @@ To run ROS 2 on the physical robot, you need to install Ubuntu OS on the Raspber
 
 ## ⚡ What to Do Next
 
-- Once loaded, proceed with:
-- ROS 2 connection
-- Control setup (keyboard / joystick)
+- Upload motor control code to Arduino Nano
+- Setup Raspberry Pi bridge with motor_bridge.py
+- Run script and establish Arduino communication
+- Control real robot and sync with simulation 🤖
 
 ### [⬅️ Previous](./ros2_joystick.md) | [Next ➡️](./hardware_integration.md)

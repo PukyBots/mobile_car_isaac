@@ -28,16 +28,30 @@
 
 ### 🎯 Identify Deadman Switch
 
-- Press buttons one by one (R1, R2, A, B, etc.)
-- Find the button where value changes from 0 → 1 (typically index 8)
-- This button acts as the Deadman Switch
-  8th value changing image~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### 1.Press buttons one by one (R1, R2, L1, L2, etc.)
 
-### 🚗 Control the Robot
+![alt text](joy_front.jpg)
 
-- Press and hold the Deadman Switch
-- Move the left joystick forward
-- The robot will start moving in Isaac Sim
+### 2.Find the button where value changes from 0 → 1 (typically index 8)
+
+![alt text](deadman_switch_value.png)
+
+### 3.This button acts as the Deadman Switch
+
+## 🚗 Control the Robot
+
+### 1.Press and hold the Deadman Switch (eg:- F2)
+
+![alt text](joy_front_button.jpg)
+
+### 2.Move the left joystick forward
+
+![alt text](joy_top.jpg)
+
+### The robot will start moving in Isaac Sim
+
+![alt text](keyboard_actiongraph_neg.png)
+Img~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` gif
 
 ## ✅ Outcome
 
@@ -48,8 +62,9 @@
 
 ## ⚡ What to Do Next
 
-- Once loaded, proceed with:
-- ROS 2 connection
-- Control setup (keyboard / joystick)
+- Install Ubuntu on Raspberry Pi using Imager
+- Complete setup and connect to Wi-Fi
+- Access Raspberry Pi via SSH
+- Install ROS 2 and prepare environment 🍓
 
 ### [⬅️ Previous](./ros2_keyboard.md) | [Next ➡️](./rpi_setup.md)
